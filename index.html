@@ -77,6 +77,9 @@ function calculateTime() {
 	if (min == 0) {
 		total_time = total_time + 0;
 	}
+	else if (min > 0 && min < 10) {
+		total_time = hour + ":0" + min;
+	}
 	return total_time;
 }
 
